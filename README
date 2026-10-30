@@ -1,0 +1,226 @@
+# Tamil Nadu Crime Prediction System
+
+### Machine Learning-Based Crime Analysis and Prediction Dashboard
+
+A web-based crime analysis and prediction system developed using **Python, Machine Learning, and Streamlit**. The application provides crime data visualization, city-wise analysis, machine learning predictions, an interactive crime map, a local data intelligence assistant, and downloadable PDF reports.
+
+The project demonstrates how data science and machine learning can be integrated into an interactive web application for crime data analysis.
+
+## Live Application
+
+**[View the Deployed Website](https://sreedharshini115-tamilnadu-crime-prediction-app-hgtook.streamlit.app/)**
+
+**Deployment Platform:** Streamlit Community Cloud
+
+## Project Overview
+
+The Tamil Nadu Crime Prediction System is designed to analyze historical sample crime data and estimate crime counts based on selected input parameters.
+
+The application uses a **Random Forest Regressor** to generate predictions and presents results through an interactive, emergency command center-style dashboard.
+
+The system is developed as an educational machine learning project and does not use live police crime records.
+
+## Key Features
+
+### 1. Crime Analytics Dashboard
+- Displays crime data summaries and key metrics.
+- Provides city-wise crime count comparisons.
+- Visualizes crime category distributions.
+- Shows year-wise crime trends.
+- Includes an interactive dataset preview.
+
+### 2. Machine Learning Crime Prediction
+- Uses the Random Forest Regression algorithm.
+- Predicts estimated crime counts.
+- Accepts city, year, crime category, and population as inputs.
+- Calculates estimated crime rates per 100,000 people.
+- Displays prediction results through dashboard metrics.
+
+### 3. Interactive Crime Map
+- Displays Tamil Nadu city locations.
+- Uses geographical coordinates from the dataset.
+- Visualizes aggregated sample crime counts.
+- Supports interactive geographical exploration.
+
+### 4. Data Intelligence Assistant
+- Provides a local rule-based analytics assistant.
+- Answers supported questions about the dataset.
+- Identifies cities with high sample crime counts.
+- Displays crime category comparisons and yearly trends.
+- Retrieves the latest generated prediction.
+
+### 5. PDF Report Generation
+- Generates downloadable prediction reports.
+- Includes city, year, crime category, and population.
+- Displays predicted crime counts and estimated crime rates.
+- Provides a structured report suitable for project demonstrations.
+
+### 6. Emergency Command Center Interface
+- Professional dark-themed dashboard.
+- Structured navigation and analytics sections.
+- Responsive interface.
+- Dedicated prediction, map, assistant, and reporting workspaces.
+
+## Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Application development |
+| Streamlit | Web application framework |
+| Pandas | Data processing and analysis |
+| NumPy | Numerical operations |
+| Scikit-learn | Machine learning |
+| Random Forest Regressor | Crime count prediction |
+| Plotly | Interactive data visualization |
+| ReportLab | PDF report generation |
+| GitHub | Source code management |
+| Streamlit Community Cloud | Website deployment |
+
+## Machine Learning Model
+
+The application uses a **Random Forest Regressor**, an ensemble machine learning algorithm that combines multiple decision trees to generate numerical predictions.
+
+**Input Features:**
+- City
+- Year
+- Crime Type
+- Population
+
+**Target Variable:**
+- Crime Count
+
+**Prediction Workflow:**
+
+1. Load the crime dataset.
+2. Prepare the input features and target variable.
+3. Encode categorical features using OneHotEncoder.
+4. Train the Random Forest Regressor.
+5. Accept user input through the Streamlit interface.
+6. Generate an estimated crime count.
+7. Calculate the estimated crime rate.
+8. Display the prediction and enable PDF report generation.
+
+## Dataset Information
+
+**Dataset File:** `tamilnadu_crime_sample.csv`
+
+The dataset contains sample crime records for Tamil Nadu cities.
+
+**Dataset Attributes:**
+
+| Column | Description |
+|---|---|
+| City | Name of the city |
+| Latitude | Geographical latitude |
+| Longitude | Geographical longitude |
+| Year | Year of the record |
+| Crime_Type | Category of crime |
+| Crime_Count | Number of recorded sample cases |
+| Population | Population value |
+| Crime_Rate_per_100k | Crime rate per 100,000 people |
+
+**Note:** The dataset is intended for educational demonstration and does not represent verified official crime statistics.
+
+## Project Structure
+
+```text
+tamilnadu-crime-prediction/
+|
+|-- app.py
+|-- tamilnadu_crime_sample.csv
+|-- requirements.txt
+|-- README.md
+```
+
+## Installation and Setup
+
+### Step 1: Clone the Repository
+
+```bash
+git clone https://github.com/sreedharshini115/tamilnadu-crime-prediction.git
+```
+
+### Step 2: Open the Project Folder
+
+```bash
+cd tamilnadu-crime-prediction
+```
+
+### Step 3: Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Run the Application
+
+```bash
+streamlit run app.py
+```
+
+### Step 5: Open the Website
+
+Streamlit normally starts the application at:
+
+```text
+http://localhost:8501
+```
+
+## Application Modules
+
+The application includes five main workspaces:
+
+1. **Command Overview:** Crime analytics, charts, and dataset summaries.
+2. **Crime Prediction:** Machine learning-based crime count estimation.
+3. **Geospatial Intelligence:** Interactive geographical visualization.
+4. **Intelligence Assistant:** Local dataset question-answering functionality.
+5. **Reporting Center:** Prediction summaries and PDF downloads.
+
+## Deployment
+
+The project is deployed using **Streamlit Community Cloud**.
+
+**Deployment Process:**
+
+1. Create a GitHub repository.
+2. Upload the application source code and dataset.
+3. Create a `requirements.txt` file.
+4. Connect GitHub to Streamlit Community Cloud.
+5. Select the repository and main application file.
+6. Deploy the application.
+7. Test the deployed features.
+
+**Live Application:**
+
+https://sreedharshini115-tamilnadu-crime-prediction-app-hgtook.streamlit.app/
+
+## Future Enhancements
+
+- Integration with verified, officially published crime datasets.
+- Advanced machine learning model evaluation and comparison.
+- Improved prediction accuracy through additional relevant features.
+- Enhanced geographical crime analysis.
+- Authentication and role-based access.
+- Automated reporting and data updates.
+
+## Project Limitations
+
+- The application currently uses sample data.
+- Predictions are model-generated estimates and are not validated operational forecasts.
+- The local intelligence assistant uses predefined analytical rules rather than a generative AI model.
+- The system is not connected to real-time police or emergency services.
+- It should not be used to make policing, safety, or emergency-response decisions.
+
+## Conclusion
+
+The Tamil Nadu Crime Prediction System demonstrates the integration of **Machine Learning, Data Analytics, Data Visualization, and Cloud Deployment** into a single interactive web application.
+
+The project provides hands-on experience in developing an end-to-end data science application, from dataset preparation and machine learning model development to dashboard creation and online deployment.
+
+---
+
+**Project Status:** Developed and Deployed
+
+**Developed By:** Sreedharshini K
+
+**Platform:** Python | Scikit-learn | Streamlit | GitHub | Streamlit Community Cloud
